@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👀</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importar TensorFlow.js y COCO-SSD -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+    <h1></h1>
+    <div id="video-container">
+        <video id="video" autoplay playsinline></video>
+    </div>
+    <button id="speak-button">Que hay por delante?</button>
+    <div id="result-container">
+        <div id="result">Esperando...</div>
+    </div>
+
+    <!-- Importar el archivo JS para la lógica de detección -->
+    <script src="script.js"></script>
+</body>
+</html>

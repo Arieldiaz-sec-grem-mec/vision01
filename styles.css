@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el texto */
+}
+
+.container {
+    width: 100%; /* Ancho completo */
+}
+
+#video-container {
+    width: 80%; /* Ancho del video */
+    margin: 0 auto; /* Centra el contenedor del video */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Esconde partes que sobresalen */
+}
+
+video {
+    width: 100%; /* Video ocupa todo el contenedor */
+    height: auto; /* Mantiene la proporción del video */
+}
+
+#speak-button {
+    background-color: #4CAF50; /* Color del botón más suave */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0; /* Espaciado alrededor del botón */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+}
+
+#result-container {
+    display: flex; /* Usar flexbox para mostrar en fila */
+    justify-content: center; /* Centra los resultados */
+    margin-top: 20px; /* Espaciado entre el botón y los resultados */
+}
+
+.result {
+    margin: 0 10px; /* Espaciado entre resultados */
+    padding: 5px 10px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 5px; /* Bordes redondeados */
+}

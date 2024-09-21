@@ -4,45 +4,62 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: center; /* Centra el texto */
+    text-align: center;
+    position: relative;
 }
 
 .container {
-    width: 100%; /* Ancho completo */
+    width: 100%;
+
 }
 
 #video-container {
-    width: 80%; /* Ancho del video */
-    margin: 0 auto; /* Centra el contenedor del video */
-    border-radius: 15px; /* Bordes redondeados */
-    overflow: hidden; /* Esconde partes que sobresalen */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    
 }
 
-video {
-    width: 100%; /* Video ocupa todo el contenedor */
-    height: auto; /* Mantiene la proporción del video */
+video, img {
+    width: 100%;
+    height: auto;
 }
 
 #speak-button {
-    background-color: #4CAF50; /* Color del botón más suave */
-    color: white; /* Color del texto */
+    background-color: rgba(76, 175, 80, 0.8); /* Color verde con transparencia */
+    color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px; /* Aumenta el padding para más espacio */
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
     cursor: pointer;
-    margin: 20px 0; /* Espaciado alrededor del botón */
-    border-radius: 5px; /* Bordes redondeados para el botón */
+    margin: 20px 0;
+    border-radius: 15px; /* Bordes más redondeados */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #result-container {
-    display: flex; /* Usar flexbox para mostrar en fila */
-    justify-content: center; /* Centra los resultados */
-    margin-top: 20px; /* Espaciado entre el botón y los resultados */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid rgba(255, 255, 255, 0.4); /* Borde más oscuro y semi-transparente */
 }
 
 .result {
-    margin: 0 10px; /* Espaciado entre resultados */
-    padding: 5px 10px; /* Espaciado interno */
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
-    border-radius: 5px; /* Bordes redondeados */
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-size: 22px; /* Aumenta el tamaño de la fuente */
+    color: white;
 }

@@ -152,12 +152,12 @@ function speakPrediction() {
         const predictionInSpanish = translation[lastPrediction] || lastPrediction;
         const speech = new SpeechSynthesisUtterance(`Veo un ${predictionInSpanish}`);
         speech.lang = 'es-ES';
-        speech.rate = 0.9; // Ajusta la velocidad de la voz
+        speech.rate = 0.8; // Ajusta la velocidad de la voz
         window.speechSynthesis.speak(speech);
     } else {
         const speech = new SpeechSynthesisUtterance('No se ha detectado ningún objeto');
         speech.lang = 'es-ES';
-        speech.rate = 0.9;
+        speech.rate = 0.8; 
         window.speechSynthesis.speak(speech);
     }
 }

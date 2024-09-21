@@ -41,7 +41,7 @@ video, img {
     transform: translateX(-50%);
 }
 
-#result-container {
+#result#result-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -49,16 +49,16 @@ video, img {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
     padding: 10px;
     border-radius: 10px; /* Bordes redondeados */
-    border: 2px solid rgba(255, 255, 255, 0.4); /* Borde más oscuro y semi-transparente */
+    border: 2px solid rgba(255, 255, 255, 0.4); /* Borde semi-transparente más oscuro */
 }
 
 .result {
     margin: 0 10px;
     padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semi-transparente para los resultados individuales */
     border-radius: 5px;
     font-size: 22px; /* Aumenta el tamaño de la fuente */
     color: white;
